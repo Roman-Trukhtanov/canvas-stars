@@ -1,0 +1,11 @@
+.main {
+  padding: rem(64) rem(16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  @include min-screen($breakpoint-md) {
+    padding: rem(80) rem(32);
+  }
+}

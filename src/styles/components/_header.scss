@@ -1,0 +1,17 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: rem(64);
+}
+
+.header__title {
+  margin: 0;
+}

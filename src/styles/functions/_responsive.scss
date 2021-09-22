@@ -1,0 +1,19 @@
+@function vw($px, $width: $base-desktop-width) {
+  @return round(strip-unit($px) / strip-unit($width) * 100vw * 10000) / 10000;
+}
+
+@function vmin($value, $base: $min-mobile-width) {
+  @return strip-unit($value) / strip-unit($base) * 100vmin;
+}
+
+@function vh($px, $height: $default-height) {
+  @return round(strip-unit($px) / strip-unit($height) * 100vh * 10000) / 10000;
+}
+
+@function em($px, $context: $root-font-size) {
+  @return round(strip-unit($px) / strip-unit($context) * 1em * 10000) / 10000;
+}
+
+@function rem($px, $context: $root-font-size) {
+  @return round(strip-unit($px) / strip-unit($context) * 1rem * 10000) / 10000;
+}

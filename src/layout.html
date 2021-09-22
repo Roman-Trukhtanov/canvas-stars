@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__wrap">
+          <h2 class="header__title">🚀 INTO SPACE 🚀</h2>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="stars">
+          <div class="stars__title-wrap">
+            <h1 class="stars__title">TEST TASK №1</h1>
+          </div>
+
+          <div class="stars__main-wrap">
+            <div class="stars__canvases">
+              <canvas
+                id="major-canvas"
+                class="stars__canvas _major"
+                width="600"
+                height="600"
+              ></canvas>
+              <canvas
+                id="binder-canvas"
+                class="stars__canvas _binder"
+                width="600"
+                height="50"
+              ></canvas>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__wrap">
+          <p class="footer__copyrights">@2021 - RT</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
